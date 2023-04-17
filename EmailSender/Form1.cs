@@ -57,7 +57,7 @@ namespace EmailSender
                 var assunto = txtAssunto.Text;
                 var msg = txtMsg.Text;
                 var message = new Google.Apis.Gmail.v1.Data.Message();
-                message.Raw = Base64UrlEncode("From: damazio.store@gmail.com\r\n" +
+                message.Raw = Base64UrlEncode("From: seu.email@gmail.com\r\n" +
                                               $"To: {email}\r\n" +
                                               $"Subject: {assunto}\r\n\r\n" +
                                               $"{msg}");
